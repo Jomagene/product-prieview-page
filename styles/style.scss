@@ -1,16 +1,13 @@
 @import "reset";
 
-/* Add Some usefull variables */ // Colors
 $dark-cyan: hsl(158, 36%, 37%);
 $cream: hsl(30, 38%, 92%);
 $very-dark-blue: hsl(212, 21%, 14%);
 $dark-grayish-blue: hsl(228, 12%, 48%);
 $white: hsl(0, 0%, 100%);
-// Font-sizes
 $font-small: 0.875rem;
 $font-large: 2rem;
 
-/* Utility classes   */
 .flex {
   display: flex;
 }
@@ -23,13 +20,79 @@ $font-large: 2rem;
 .items-center {
   align-items: center;
 }
+.pad-30 {
+  padding: 1.875rem;
+}
 
-figure {
-  width: 15rem;
+.font-fraunces {
+  font-family: "Fraunces";
+  font-size: $font-large;
+  font-weight: 700;
+  line-height: 1em;
+  color: $very-dark-blue;
+}
+
+body {
+  background-color: $cream;
+  color: $dark-grayish-blue;
+  font-size: $font-small;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+main {
+  max-width: 21.5rem;
+  flex-direction: column;
+  margin: 10.9375rem auto;
+  background-color: $white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  figure {
+    height: 15rem;
+    img {
+      object-fit: cover;
+      height: 100%;
+      &.desktop-image {
+        display: none;
+      }
+    }
+  }
+  .text-container {
+    header .category {
+      letter-spacing: 0.4em;
+      font-size: 0.75rem;
+    }
+    button {
+      background-color: $dark-cyan;
+      color: $white;
+      border: none;
+      width: 100%;
+      padding: 0.875rem;
+      border-radius: 0.625rem;
+      img {
+        padding-right: 0.75rem;
+      }
+    }
+  }
 }
 
 @media (min-width: 38rem) {
-  figure {
-    width: 28.125rem;
+  main {
+    flex-direction: row;
+    max-width: 37.5rem;
+    figure {
+      height: 28.125rem;
+      img {
+        &.desktop-image {
+          display: block;
+        }
+        &.mobile-image {
+          display: none;
+        }
+      }
+    }
+    .text-container {
+      width: 50%;
+    }
   }
 }
