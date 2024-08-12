@@ -5,3 +5,4 @@
 .prettierignore
 styles/*.css
 styles/*.css.map
+!styles/style.css

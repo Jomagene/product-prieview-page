@@ -1,0 +1,125 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font: inherit;
+}
+
+p,
+h1 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.pad-30 {
+  padding: 1.875rem;
+}
+
+.font-fraunces {
+  font-family: "Fraunces";
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1em;
+  color: hsl(212, 21%, 14%);
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  color: hsl(228, 12%, 48%);
+  font-size: 0.875rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+main {
+  max-width: 21.5rem;
+  flex-direction: column;
+  margin: 10.9375rem auto;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+main figure {
+  height: 15rem;
+}
+main figure img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+main figure img.desktop-image {
+  display: none;
+}
+main .text-container header .category {
+  letter-spacing: 0.4em;
+  font-size: 0.75rem;
+}
+main .text-container button {
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  width: 100%;
+  padding: 0.875rem;
+  border-radius: 0.625rem;
+}
+main .text-container button img {
+  padding-right: 0.75rem;
+}
+
+@media (min-width: 38rem) {
+  main {
+    flex-direction: row;
+    max-width: 37.5rem;
+  }
+  main figure {
+    height: 28.125rem;
+  }
+  main figure img.desktop-image {
+    display: block;
+  }
+  main figure img.mobile-image {
+    display: none;
+  }
+  main .text-container {
+    width: 50%;
+  }
+}/*# sourceMappingURL=style.css.map */
