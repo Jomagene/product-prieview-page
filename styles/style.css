@@ -139,6 +139,10 @@ main .text-container button {
 main .text-container button img {
   padding-right: 0.75rem;
 }
+main .text-container button:hover {
+  background-color: hsl(158, 36%, 20%);
+  cursor: pointer;
+}
 
 @media (min-width: 38rem) {
   main {
