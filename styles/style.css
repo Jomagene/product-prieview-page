@@ -54,12 +54,24 @@ h1 {
   padding: 1.875rem;
 }
 
+.gap-30 {
+  gap: 1.875rem;
+}
+
+.gap-20 {
+  gap: 1.25rem;
+}
+
 .font-fraunces {
   font-family: "Fraunces";
   font-size: 2rem;
   font-weight: 700;
   line-height: 1em;
   color: hsl(212, 21%, 14%);
+}
+
+.line-throught {
+  text-decoration: line-through;
 }
 
 body {
@@ -92,6 +104,9 @@ main figure img.desktop-image {
 main .text-container header .category {
   letter-spacing: 0.4em;
   font-size: 0.75rem;
+}
+main .text-container .new-price {
+  color: hsl(158, 36%, 37%);
 }
 main .text-container button {
   background-color: hsl(158, 36%, 37%);
