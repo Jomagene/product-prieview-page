@@ -70,6 +70,16 @@ main {
         display: none;
       }
     }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: hsla(0, 0, 0, 0.09);
+      z-index: 1;
+    }
   }
   .text-container {
     header .category {

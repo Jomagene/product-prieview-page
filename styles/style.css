@@ -107,6 +107,16 @@ main figure img {
 main figure img.desktop-image {
   display: none;
 }
+main figure::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsla(0, 0%, 0%, 0.09);
+  z-index: 1;
+}
 main .text-container header .category {
   letter-spacing: 0.4em;
   font-size: 0.75rem;
