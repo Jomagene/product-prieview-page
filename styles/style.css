@@ -50,16 +50,16 @@ h1 {
   align-items: center;
 }
 
-.pad-30 {
-  padding: 1.875rem;
+.pad-32 {
+  padding: 2rem;
 }
 
-.gap-30 {
-  gap: 1.875rem;
+.gap-25 {
+  gap: 1.6rem;
 }
 
-.gap-20 {
-  gap: 1.25rem;
+.gap-17 {
+  gap: 1.1rem;
 }
 
 .font-fraunces {
@@ -72,6 +72,11 @@ h1 {
 
 .line-throught {
   text-decoration: line-through;
+}
+
+.line-height-p {
+  line-height: 1.64;
+  padding-bottom: 0.175rem;
 }
 
 body {
@@ -92,6 +97,7 @@ main {
 }
 main figure {
   height: 15rem;
+  position: relative;
 }
 main figure img {
   -o-object-fit: cover;
@@ -108,13 +114,17 @@ main .text-container header .category {
 main .text-container .new-price {
   color: hsl(158, 36%, 37%);
 }
+main .text-container .price {
+  padding-bottom: 0.19rem;
+}
 main .text-container button {
   background-color: hsl(158, 36%, 37%);
   color: hsl(0, 0%, 100%);
   border: none;
   width: 100%;
-  padding: 0.875rem;
+  padding: 0.835rem;
   border-radius: 0.625rem;
+  font-weight: 700;
 }
 main .text-container button img {
   padding-right: 0.75rem;
