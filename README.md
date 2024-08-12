@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Url](https://my-solution-url.com)
+- Solution URL: [My solution](https://www.frontendmentor.io/solutions/responsive-product-preview-card-using-sass-and-flex-box-5N9DkeINOa)
 - Live Site URL: [Product prieview card](https://jomagene.github.io/product-prieview-page/)
 
 ## My process
