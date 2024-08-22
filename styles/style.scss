@@ -64,12 +64,10 @@ main {
   figure {
     height: 15rem;
     position: relative;
+    picture,
     img {
       object-fit: cover;
       height: 100%;
-      &.desktop-image {
-        display: none;
-      }
     }
     &::before {
       content: "";
@@ -118,14 +116,6 @@ main {
     max-width: 37.5rem;
     figure {
       height: 28.125rem;
-      img {
-        &.desktop-image {
-          display: block;
-        }
-        &.mobile-image {
-          display: none;
-        }
-      }
     }
     .text-container {
       width: 50%;

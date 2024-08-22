@@ -19,16 +19,14 @@
     <title>Frontend Mentor | Product preview card component</title>
   </head>
   <body>
-    <main class="flex overflow-hiddden">
+    <main class="flex overflow-hidden">
       <figure>
-        <img
-          src="./images/image-product-desktop.jpg"
-          alt="product desktop image"
-          class="desktop-image" />
-        <img
-          src="./images/image-product-mobile.jpg"
-          alt="product desktop image"
-          class="mobile-image" />
+        <picture>
+          <source
+            media="(min-width: 38rem)"
+            srcset="./images/image-product-desktop.jpg" />
+          <img src="./images/image-product-mobile.jpg" alt="Product Image" />
+        </picture>
       </figure>
       <div class="pad-32 text-container flex column gap-25">
         <header class="flex column gap-17">

@@ -15,6 +15,7 @@ body {
 }
 
 img,
+picture,
 svg {
   display: block;
   max-width: 100%;
@@ -99,13 +100,11 @@ main figure {
   height: 15rem;
   position: relative;
 }
+main figure picture,
 main figure img {
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
-}
-main figure img.desktop-image {
-  display: none;
 }
 main figure::before {
   content: "";
@@ -151,12 +150,6 @@ main .text-container button:hover {
   }
   main figure {
     height: 28.125rem;
-  }
-  main figure img.desktop-image {
-    display: block;
-  }
-  main figure img.mobile-image {
-    display: none;
   }
   main .text-container {
     width: 50%;
